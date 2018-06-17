@@ -1,20 +1,47 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    adsf (1.2.0)
-      rack (>= 1.0.0)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    adsf (1.4.1)
+      rack (>= 1.0.0, < 3.0.0)
     colored (1.2)
-    cri (2.6.1)
+    concurrent-ruby (1.0.5)
+    cri (2.10.1)
       colored (~> 1.2)
+    ddmemoize (1.0.0)
+      ddmetrics (~> 1.0)
+      ref (~> 2.0)
+    ddmetrics (1.0.0)
+    ddplugin (1.0.2)
+    hamster (3.0.0)
+      concurrent-ruby (~> 1.0)
     kramdown (1.4.0)
-    nanoc (3.7.1)
-      cri (~> 2.3)
-    rack (1.5.2)
+    nanoc (4.9.3)
+      addressable (~> 2.5)
+      cri (~> 2.8)
+      ddmemoize (~> 1.0)
+      ddmetrics (~> 1.0)
+      ddplugin (~> 1.0)
+      hamster (~> 3.0)
+      parallel (~> 1.12)
+      ref (~> 2.0)
+      slow_enumerator_tools (~> 1.0)
+      tomlrb (~> 1.2)
+    parallel (1.12.1)
+    public_suffix (3.0.2)
+    rack (2.0.5)
+    ref (2.0.0)
+    slow_enumerator_tools (1.1.0)
+    tomlrb (1.2.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  adsf
+  adsf (>= 1.2.0)
   kramdown
-  nanoc
+  nanoc (>= 3.8.0)
+
+BUNDLED WITH
+   1.16.1
